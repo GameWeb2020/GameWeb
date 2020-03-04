@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <title>GameWeb</title>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+// <![CDATA[  <-- For SVG support
+if ('WebSocket' in window) {
+(function () {
+function refreshCSS() {
+var sheets = [].slice.call(document.getElementsByTagName("link"));
+var head = document.getElementsByTagName("head")[0];
+for (var i = 0; i < sheets.length; ++i) {
+var elem = sheets[i];
+var parent = elem.parentElement || head;
+parent.removeChild(elem);
+var rel = elem.rel;
+if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+}
+parent.appendChild(elem);
+}
+}
+var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+var address = protocol + window.location.host + window.location.pathname + '/ws';
+var socket = new WebSocket(address);
+socket.onmessage = function (msg) {
+if (msg.data == 'reload') window.location.reload();
+else if (msg.data == 'refreshcss') refreshCSS();
+};
+if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+console.log('Live reload enabled.');
+sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+}
+})();
+}
+else {
+console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+}
+// ]]>
+</script></head>
+    <body style="
+    cursor :unset;">
+        <header>
+            <input type="search" style=" color: blue; cursor: pointer; align-self: right; position: absolute;" placeholder="Search GameWeb...">
+        <h1 style="color: indigo; text-align: center; font-family: Arial;cursor: not-allowed;">GameWeb</h1>
+        </header><hr><hr>
+        <h1 style=" font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic; color: lightblue;">Welcome to GameWeb!</h1>
+            <p style=" color: greenyellow; font-family: Arial; text-align: left;">GameWeb - The site that is all about games!!!</p>
+            <h2 style="color: lightblue; font-family: Arial; text-align: left;">About GameWeb</h2>
+            <p style="color: lightgreen; font-family: Arial; text-align: left;"></p>
